@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<meta charset="UTF-8">
-	<title>HugClicker</title>
+	<title>CartolaEP</title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/hide.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
 </head>
 <body>
-	<button onClick="hugClick(1)">Clique aqui</button> <br>
-	Abraços: <div id="hugs">0</div>
-<script type="text/javascript" src="js/main.js"></script>
+	<nav>
+	    <div class="nav-wrapper laranja nav-mobile">
+	      <!--  <a href="#" class="brand-logo">CartolaEP</a> -->
+	      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <a href="#" class="brand-logo center">
+	      	<img src="img/cartola-logo-crop.png" class="logo">
+	      </a>
+	    </div>
+	  </nav> 		<!-- nav -->
+	<ul id="slide-out" class="side-nav">
+	    <li><div class="userView">
+	      <div class="background laranja"></div>
+	      <a href="#!user"><img class="circle" src="img/user.jpg"></a>
+	      <a href="#!name"><span class="white-text name">Paulo Elienay</span></a>
+	      <a href="#!email"><span class="white-text email">pauloelienay@myself.com</span></a>
+	    </div></li>
+	    <li><a href="#!" id="opt-1-btn"><i class="material-icons">turned_in</i>Parciais</a></li>
+	    <li><a href="#!" id="opt-2-btn"><i class="material-icons">supervisor_account</i>Ligas</a></li>
+	    <li><a href="#!" id="opt-3-btn"><i class="material-icons">person_pin</i>Escalação</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="waves-effect" href="#!" id="opt-4-btn"><i class="material-icons">class</i>Termos e políticas</a></li>
+	    <li><a class="waves-effect" href="#!" id="opt-5-btn"><i class="material-icons">info</i>Ajuda</a></li>
+	    <li><a class="waves-effect" href="#!" id="opt-6-btn"><i class="material-icons">perm_identity</i>Perfil</a></li>
+	    <li><a class="waves-effect" href="#!" id="opt-7-btn"><i class="material-icons">settings</i>Configurações</a></li>
+	    <li><a class="waves-effect" href="#!" id="opt-8-btn"><i class="material-icons">power_settings_new</i>Sair</a></li>
+	</ul> 			<!-- sidenav -->
+	  <div class="fixed-action-btn click-to-toggle">
+	    <a class="btn-floating btn-large red">
+	      <i class="large material-icons">group_work</i>
+	    </a>
+	    <ul>
+	      <li><a class="btn-floating red"><i class="material-icons">turned_in</i></a></li>
+	      <li><a class="btn-floating yellow darken-1"><i class="material-icons">supervisor_account</i></a></li>
+	      <li><a class="btn-floating green"><i class="material-icons">person_pin</i></a></li>
+	      <li><a class="btn-floating blue"><i class="material-icons">power_settings_new</i></a></li>
+	    </ul>
+	  </div>		<!-- fixed-action-btn -->
+
+
+	  <div class="card-panel white no-padding" id="opt-topbar-div">
+	  	<div class="left-align">
+	  		<img src="img/shield.svg" class="shield">
+	  		<img src="img/user.jpg" class="user">
+	  	</div>
+	  </div>		 <!-- topbar-div -->
+
+	  <div class="col s12 m6" id="opt-4-div">
+	  	<h3 class="fix">Termos e Políticas</h3>
+	  	<p class="fixc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate facere dolorum amet autem. Ipsa quos qui, accusamus, quo saepe reprehenderit maiores tempore est alias architecto reiciendis, illum praesentium laudantium molestias.</p>
+	  </div>
+
+	  <div class="col s12 m6" id="opt-5-div">
+	  	<h2 class="fix" ">Ajuda</h2>
+	  	<p class="fix" ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores maxime nobis ab explicabo magnam. Aperiam veritatis dolor quia, at nemo! Illum nesciunt minima ipsum, debitis eligendi esse sequi a aliquam.</p>
+	  </div> 		<!-- option 5 -->
+
+	  <div class="a"></div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/sidenav.js"></script>
+	<script src="js/options.js"></script>
 </body>
 </html>
